@@ -1,0 +1,207 @@
+/* Secciones */
+
+.seccion1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;    
+}
+
+.seccion2 {
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    margin-bottom: 2%;
+}
+
+.actividades {
+    padding: 5%;
+    margin-bottom: 2%;
+}
+
+.contacto {
+    background-color: #469C6A;
+    padding: 5%;
+    margin-bottom: 2%;
+}
+
+
+.decoracion {
+    border-style: solid;
+    border-width: 0.3rem;
+    border-color: coral;
+    border-radius: 1rem;
+    margin-bottom: 2%;
+    padding: 2%;
+    width: 100%;
+}
+
+/* tarjetas */
+.contenedor {
+    background-color: antiquewhite;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.tarjeta {
+    background-color: rgb(87, 114, 116);
+    border-radius: 1rem;
+    width: 30%;
+    margin: 1%;
+    padding: 2%;
+}
+.logotarjeta {width: 30%; 
+    display:block; 
+    margin: auto;}
+
+/* Elementos varios */
+.boton {
+    background-color:#469C6A;
+    color: aliceblue;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-color: aliceblue;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding:0.5rem 4rem;
+}
+
+.foto {
+    width: 100%;
+    height: auto;
+}
+
+/*separador*/
+.separador{
+    background-color: #607a6b;
+    display: flex;
+    flex-wrap: warp;
+    margin-bottom: 2%;  
+    align-items: center;
+}
+
+.logo {
+    width:100px;
+    height: 100px;
+    margin: 2%;
+}
+
+.textologo{
+    width: 200px;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+
+/* Fuentes */
+p { 
+    font-size: 1.5rem;
+    color: #607a6b;
+}
+
+h2 { 
+    font-size: 2rem;
+    color: coral;
+}
+
+li {
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+.tarjeta p {color: aliceblue;}
+
+.tarjeta h2 {color: aliceblue;}
+
+.seccion4 h2 {color: rgb(80, 37, 17);}
+
+.seccion4 p {color: rgb(20, 55, 68);}
+
+
+
+/* animaciones */
+@keyframes efectotarjetas {
+  0% {background-color: #607a6b; rotate: 0deg;}
+  25% {background-color: #469C6A; rotate: 15deg; scale:1.2;}
+  50% {background-color: #469C6A; rotate: -15deg; scale:1.2;}
+  100% {background-color: #607a6b; rotate: 0deg;}
+
+}
+
+@keyframes desenfoque {
+  0% {filter:blur(0rem);}
+  50% {filter:blur(0.5rem);}
+  100% {filter:blur(0rem);}
+
+}
+
+div.tarjeta:hover {
+  animation-name: efectotarjetas;
+  animation-duration: 500ms;
+
+}
+
+div.separador:hover {
+  animation-name: desenfoque;
+  animation-duration: 1s;
+
+}
+
+
+/* Mediaqueries */
+
+@media screen and (max-width: 834px) {
+    .contenedor {
+        flex-wrap: wrap;
+    }
+   .tarjeta {
+        width: 40%;
+    }
+    
+    p {font-size: 1rem;}
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    li {font-size: 1rem;}
+}
+
+@media screen and (max-width: 412px) {
+    .seccion1 {
+        padding: 2%;
+    }
+     .seccion2 {
+        padding: 2%;
+    }
+     .seccion3 {
+        padding: 2%;
+    }
+     .seccion4 {
+        padding: 2%;
+    }
+
+.decoracion{
+    width: 90%;
+}
+  .contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+    .tarjeta {
+        width: 90%;
+    }
+    .logotarjeta {
+        display: none;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+}
