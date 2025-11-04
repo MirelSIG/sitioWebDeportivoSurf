@@ -1,13 +1,13 @@
 header {
     background-color: rgba(27, 68, 91, 1);
     padding: 0.5rem;
-
 }
 
 body {
     box-sizing: border-box;
     background-color: rgba(27, 68, 91, 1);
-    margin-left: 5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
 }
 
 h1 {
@@ -27,27 +27,29 @@ h2 {
 
 .formul {
     font-size: 1.5rem;
-    margin: 0;
+    margin-right: 0;
     font-weight: bolder;
+    border: 0.2rem solid rgba(27, 68, 91, 1);
 }
 
 .hero-layout {
-  width: 50vw;
+  /* width: 50vw; */
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   margin-top: 0;
 }
 
-.hero {
+/* .hero {
   flex: 1;
-}
+} */
 
 .hero-layout .paisaje {
   display: flex;
   width: 50vw;
-  height: 100vh;
+  /* height: 100vh; */
   margin-top: 0;
+  justify-content: center;
 }
 
 .info-contacto {
@@ -55,6 +57,11 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+
+.mapa {
+  position: relative;
+  display: inline-block;
 }
 
 .mapa iframe {
@@ -76,13 +83,47 @@ h2 {
 .holder-size {
     font-size: 1.2rem;
     height: 3.5rem;
+    line-height: 5rem;
 }
 
 .contacto .btn-submit {
     width: 30vw;
-    background-color: green;
+    background-color: rgba(70, 156, 106, 1);
     color: antiquewhite;
     font-size: 1.5rem;
     font-weight: bolder;
     height:3rem;
+}
+
+/* Marcador encima del mapa */
+.marcador {
+  position: absolute;
+  top: 50vh; 
+  left: 5050vw;
+  transform: translate(-50%, -100%);
+  font-size: 4rem;
+  cursor: pointer;
+  animation: bounce 1s infinite;
+}
+
+/* Mensaje emergente */
+.tooltip {
+  display: block;
+  background: #fff;
+  color: #f80707;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Animación de rebote*/
+@keyframes bounce {
+  0%, 100% { 
+    transform: translate(-50vw, -10vh) scale(1); 
+  }
+  50% { 
+    transform: translate(-50vw, -12vh) scale(1.1); 
+  }
 }
