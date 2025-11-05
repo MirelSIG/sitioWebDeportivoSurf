@@ -10,8 +10,9 @@ body {
     margin-right: 3vw;
 }
 
+
 h1 {
-    margin-left: 1.5rem 0 0 0;
+    margin: 1.5rem 0 0 0;
     color: antiquewhite;
     font-size: xxx-large;
     font-weight: bold;
@@ -20,9 +21,10 @@ h1 {
 
 h2 {
     color: antiquewhite;
-    font-size: large;
+    font-size:2rem;
+    font-weight: bolder;
+    padding: 0;
     margin: 0;
-    padding-bottom: 0;
 }
 
 .formul {
@@ -33,61 +35,60 @@ h2 {
 }
 
 .hero-layout {
-  /* width: 50vw; */
-  display: flex;
-  flex-direction: row;
-  /* align-items: flex-start; */
-  margin-top: 0;
+    display: flex;
+   
+    margin-top: 0;
 }
 
-/* .hero {
-  flex: 1;
-} */
-
 .hero-layout .paisaje {
-  display: flex;
-  width: 50vw;
-  /* height: 100vh; */
-  margin-top: 0;
-  justify-content: center;
+    width: 50vw;
+    height: 60vh;
+    margin-top: 0;
 }
 
 .info-contacto {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.mapa {
-  position: relative;
-  display: inline-block;
-}
+/* .mapa {
+    margin-bottom: 0;
+    position: relative;
+     width:50vw;
+    max-width: 50vw;
+} */
 
 .mapa iframe {
-  margin-left: 0%;
-  width: 30vw;
-  height: 57vh;
-  flex-direction: column;
-  align-items: start;
+    position: relative;
+    margin-left: 0%;
+    width: 60vw;
+    height: 30vh;
+    flex-direction: column;
+    align-items: start;
 }
 
 .contacto form {
-  font-size: 1rem;
-  width: 30vw;  
-  display: flex;
-  flex-direction: column;
-  gap: 0.6vh;
+
+    font-size: 1rem;
+    width: 40vw;  
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vh;
 }
 
 .holder-size {
     font-size: 1.2rem;
     height: 3.5rem;
-    line-height: 5rem;
 }
 
-.contacto .btn-submit {
-    width: 30vw;
+.holder-big {
+    font-size: 1.2rem;
+    height: 7rem;
+}
+
+.btn-submit:hover {
+    width: 40vw;
     background-color: rgba(70, 156, 106, 1);
     color: antiquewhite;
     font-size: 1.5rem;
@@ -97,33 +98,58 @@ h2 {
 
 /* Marcador encima del mapa */
 .marcador {
-  position: absolute;
-  top: 50vh; 
-  left: 5050vw;
-  transform: translate(-50%, -100%);
-  font-size: 4rem;
-  cursor: pointer;
-  animation: bounce 1s infinite;
+    position: absolute;
+    top: 20vh;
+    left: 83vw;
+    font-size: 2rem;
+    animation: bounce 1s infinite;
+    transform: translate(-50%, -100%);
+    z-index: 10;
+    cursor: pointer;
 }
 
-/* Mensaje emergente */
 .tooltip {
-  display: block;
-  background: #fff;
-  color: #f80707;
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
-  font-size: 1.5rem;
-  margin-top: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    display: flex;
+    background-color: #fff;
+    color: #f80202;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
 }
 
-/* Animación de rebote*/
+/* Animación de bounce*/
 @keyframes bounce {
-  0%, 100% { 
-    transform: translate(-50vw, -10vh) scale(1); 
+    0%, 100% { 
+        transform: translate(-0.5vh) scale(1); 
+    }
+    50% { 
+        transform: translate(-0.5vh) scale(1.1); 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-layout {
+      flex-direction: column;
+  justify-content: flex-start;
   }
-  50% { 
-    transform: translate(-50vw, -12vh) scale(1.1); 
+  .info-contacto{
+    flex-direction: row;
   }
+  .hero-layout .paisaje {
+    width: 100vw;
+    height: 60vh;
+    margin-top: 0;
+}
+.contacto form {
+  margin-right: 5vw;
+
+}
+
+@media screen and (max-width: 700px) {
+ .info-contacto{
+    flex-direction: column;
+  }
+
 }
