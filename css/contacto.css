@@ -6,8 +6,6 @@ header {
 body {
     box-sizing: border-box;
     background-color: rgba(27, 68, 91, 1);
-    margin-left: 3vw;
-    margin-right: 3vw;
 }
 
 
@@ -27,22 +25,23 @@ h2 {
     margin: 0;
 }
 
-.formul {
+/* .formul {
     font-size: 1.5rem;
     margin-right: 0;
     font-weight: bolder;
     border: 0.2rem solid rgba(27, 68, 91, 1);
-}
+} */
 
 .hero-layout {
     display: flex;
-   
     margin-top: 0;
+    margin-left: 2vw;
+    position: relative;
 }
 
 .hero-layout .paisaje {
     width: 50vw;
-    height: 60vh;
+    /* height: 60vh; */
     margin-top: 0;
 }
 
@@ -52,26 +51,33 @@ h2 {
     gap: 20px;
 }
 
-/* .mapa {
-    margin-bottom: 0;
+.mapa {
     position: relative;
-     width:50vw;
-    max-width: 50vw;
-} */
+    width: 100;
+    height: 50vh;
+}
 
 .mapa iframe {
     position: relative;
-    margin-left: 0%;
-    width: 60vw;
+    margin-left: 0.5vw;
+    width: 45vw;
     height: 40vh;
     flex-direction: column;
     align-items: start;
+    
 }
 
-.contacto form {
-    height: 50vh;
+.contacto {
+    position: relative;
+    margin-left: 0.5vw;
+}
+
+form {
+    position: relative;
+    margin-left: 0.2vw;
+    height: auto;
     font-size: 1rem;
-    width: 40vw;  
+    width: 45vw;  
     display: flex;
     flex-direction: column;
     gap: 0.4vh;
@@ -87,8 +93,8 @@ h2 {
     height: 7rem;
 }
 
-.btn-submit:hover {
-    width: 40vw;
+.btn-submit {
+    width: 45vw;
     background-color: rgba(70, 156, 106, 1);
     color: antiquewhite;
     font-size: 1.5rem;
@@ -96,11 +102,21 @@ h2 {
     height:3rem;
 }
 
+.btn-submit:hover {
+    width: 45vw;
+    background-color: rgb(41, 147, 53);
+    color: antiquewhite;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    height:3rem;
+    transition: 0.3s;
+}
+
 /* Marcador encima del mapa */
 .marcador {
     position: absolute;
-    top: 20vh;
-    left: 83vw;
+    top: 20%;
+    left: 83%;
     font-size: 2rem;
     animation: bounce 1s infinite;
     transform: translate(-50%, -100%);
@@ -152,5 +168,55 @@ h2 {
     flex-direction: column;
   }
 
+}
+}
+
+@media screen and (max-width: 768px) {
+  .hero-layout {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-layout .paisaje {
+    width: 100vw;
+    height: 40vh;
+  }
+
+  .info-contacto {
+    width: 100vw;
+    height: auto;
+  }
+
+  .mapa {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .hero-layout iframe {
+    height: 40vh;
+  }
+
+  .contacto {
+    width: 100vw;
+    padding: 2em;
+  }
+
+  .contacto form {
+    height: auto;
+    gap: 0.6vh;
+  }
+
+  .mapa iframe {
+    width: 50vw;
+    height: 45vh;
+    border: none;
+    border-radius: 1em;
+}
+
+.tooltip {
+    left: 80vw;
+    position: relative;
+    top: 20vh;
+    left: 80vw;
 }
 }
