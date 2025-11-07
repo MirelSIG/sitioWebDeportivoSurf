@@ -51,12 +51,11 @@ h2 {
     gap: 20px;
 }
 
-/* .mapa {
-    margin-bottom: 0;
+.mapa {
     position: relative;
-    width:50vw;
-    max-width: 50vw;
-} */
+    width: 100;
+    height: 50vh;
+}
 
 .mapa iframe {
     position: relative;
@@ -116,8 +115,8 @@ form {
 /* Marcador encima del mapa */
 .marcador {
     position: absolute;
-    top: 20vh;
-    left: 83vw;
+    top: 20%;
+    left: 83%;
     font-size: 2rem;
     animation: bounce 1s infinite;
     transform: translate(-50%, -100%);
