@@ -140,5 +140,5 @@ Se incorporan imágenes de acceso libre tomadas de la web.
 - Andrés Ocina *(Asesor educativo)*
 
 ## 8. Historial de cambios (Changelog): 
-Primera versión.
+Primera versión 1.
 ---
