@@ -11,7 +11,12 @@ El sitio incluye cinco (05) páginas principales:
 5. Contacto
    
 3. ## Instalación y configuración
-*(Sección pendiente de completar con instrucciones técnicas específicas)*
+3.1 Creación de cuenta en netlify.com con usuario github
+3.2 Inició de sesión con github
+3.3 Creación de un nuevo despliegue con previa solicitud de clave de acceso
+3.4 Al autorizar, inmediatamente elegimos el repositorio a desplegar
+3.5 Luego de la espera del proceso, recibimos notificación de disponibilidad del sitio en un enlace temporal(https://tranquil-paprenjak-8312f5.netlify.app/).
+3.6 Revisión del sitio con w3C Validator a través de la url proporcionada por netlify.com
 
 4.📁 Estructura del proyecto
 
@@ -70,11 +75,11 @@ No se ha hecho uso de licencias corporativas.
 Se incorporan imágenes de acceso libre tomadas de la web.
 
 7. **Equipo de desarrollo:**
-- Jorge Cereceda  
-- Eder Vadillo  
-- Yoandres Lacruz  
-- Mirel Volcán  
-- Stiwar Troyano  
+- Jorge Cereceda  https://github.com/jorgecerecedatrabajo-bit
+- Eder Vadillo  https://github.com/Edervad
+- Yoandres Lacruz  https://github.com/ylcruzdev
+- Mirel Volcán  https://github.com/MirelSIG
+- Stiwar Troyano  https://github.com/troyanojoi-sour
 - Andrés Ocina *(Asesor educativo)*
 
 8. Historial de cambios (Changelog): 
