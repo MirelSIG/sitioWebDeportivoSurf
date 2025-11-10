@@ -131,7 +131,7 @@ form {
     box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     margin-top: 0.5rem;
     font-size: 1.5rem;
-    width: fit-content;
+    margin-left: -10rem;
 }
 
 /* Animación de bounce*/
@@ -148,12 +148,14 @@ form {
 .hero-layout {
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 0;
   }
 .info-contacto{
     flex-direction: row;
+    margin-top: 2rem;
   }
   .hero-layout .paisaje {
-    width: 100vw;
+    width: 100%;
     height: 60vh;
     margin-top: 0;
 }
@@ -165,10 +167,10 @@ form {
 }
 
 @media screen and (max-width: 768px) {
-  h1 {
-    font-size: medium;
+  .info-contacto{
+    flex-direction: column;
   }
-  
+
   .hero-layout {
     flex-direction: column;
     height: auto;
@@ -199,22 +201,22 @@ form {
   }
 
   .contacto form {
-    width: 50 vw;
+    width: 95%;
     height: auto;
     gap: 0.6vh;
   }
 
   .mapa iframe {
-    width: 50vw;
+    width: 95vw;
     height: 45vh;
     border: none;
     border-radius: 1em;
 }
 
-.tooltip {
+/*.tooltip {
     /* left: 80vw;
-    position: relative; */
+    position: relative;
     top: 20vh;
     left: 80vw;
-}
+}*/
 }
