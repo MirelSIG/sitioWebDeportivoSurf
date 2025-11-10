@@ -148,7 +148,7 @@ form {
 
 @media screen and (max-width: 1024px) {
   .hero-layout {
-      flex-direction: column;
+  flex-direction: column;
   justify-content: flex-start;
   margin-left: 0;
   }
@@ -175,6 +175,10 @@ form {
 }
 
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: medium;
+  }
+
   .info-contacto{
     flex-direction: column;
   }
@@ -207,6 +211,10 @@ form {
     width: 100vw;
     padding: 2em;
   }
+  
+  .contacto .btn-submit {
+    width: 100%;
+  }
 
   .contacto form {
     width: 95%;
@@ -214,18 +222,13 @@ form {
     gap: 0.6vh;
   }
 
+
+
   .mapa iframe {
     width: 95vw;
     height: 45vh;
     border: none;
     border-radius: 1em;
 }
-/*
-.tooltip {
-    left: 80vw;
-    position: relative;
-    top: 20vh;
-    left: 80vw;
-}*/
 
 }
