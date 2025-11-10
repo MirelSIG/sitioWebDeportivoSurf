@@ -119,7 +119,7 @@ El sitio incluye cinco páginas principales:
 │   └── servicios.html
 └── readme.md
 
-10 directories, 86 files´´´
+10 directories, 86 files```
 
 ## 4. Estado del proyecto: 
 
