@@ -63,7 +63,7 @@ Se incorporan imágenes de acceso libre tomadas de la web.
 - Yoandres Lacruz  https://github.com/ylcruzdev
 - Mirel Volcán  https://github.com/MirelSIG
 - Stiwar Troyano  https://github.com/troyanojoi-sour
-- Andrés Ocina *(Asesor educativo)*
+- Andrés Ocina *(Asesor educativo)* https://github.com/andres63teacher
 
 ## 7. Historial de cambios (Changelog): 
 Primera versión 1.
