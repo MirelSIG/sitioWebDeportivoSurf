@@ -1,28 +1,38 @@
+/* ---------------------------------------------
+ESTILOS GENERALES
+--------------------------------------------- */
 header {
+<<<<<<< HEAD
     background-color: rgba(27, 68, 91, 1);
     padding: 0.5rem;
+=======
+  background-color: rgba(27, 68, 91, 1);
+  padding: 0.5rem;
+  margin-top: 2rem;
+>>>>>>> dev/mirel
 }
 
 body {
-    box-sizing: border-box;
-    background-color: rgba(27, 68, 91, 1);
+  box-sizing: border-box;
+  background-color: rgba(27, 68, 91, 1);
+  margin: 0;
+  padding: 0;
 }
 
-
 h1 {
-    margin: 1.5rem 0 0 0;
-    color: antiquewhite;
-    font-size: xxx-large;
-    font-weight: bold;
-    padding-bottom: 0;
+  margin: 1.5rem 0 0 0;
+  color: antiquewhite;
+  font-size: xxx-large;
+  font-weight: bold;
+  padding-bottom: 0;
 }
 
 h2 {
-    color: antiquewhite;
-    font-size:2rem;
-    font-weight: bolder;
-    padding: 0;
-    margin: 0;
+  color: antiquewhite;
+  font-size: 2rem;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
 }
 
 /* .formul {
@@ -33,6 +43,7 @@ h2 {
 } */
 
 .hero-layout {
+<<<<<<< HEAD
     display: flex;
     margin-top: 0;
     margin-left: 2vw;
@@ -65,14 +76,37 @@ h2 {
     flex-direction: column;
     align-items: start;
     
+=======
+  display: flex;
+  margin-top: 0;
+  margin-left: 2vw;
+  position: relative;
+  gap: 1.5vw;
+}
+
+.hero-layout .paisaje {
+  width: 50vw;
+  height: 100%;
+  margin-top: 0;
+  padding-bottom: 2vh;
+  object-fit: cover;
+}
+
+.info-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 2vh;
+>>>>>>> dev/mirel
 }
 
 .contacto {
-    position: relative;
-    margin-left: 0.5vw;
+  position: relative;
+  margin-left: 0.5vw;
 }
 
 form {
+<<<<<<< HEAD
     position: relative;
     margin-left: 0.2vw;
     height: auto;
@@ -81,39 +115,81 @@ form {
     display: flex;
     flex-direction: column;
     gap: 0.4vh;
+=======
+  position: relative;
+  margin-left: 0.2vw;
+  height: auto;
+  font-size: 1rem;
+  width: 45vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4vh;
+>>>>>>> dev/mirel
 }
 
 .holder-size {
-    font-size: 1.2rem;
-    height: 3.5rem;
+  font-size: 1.2rem;
+  height: 3.5rem;
 }
 
 .holder-big {
-    font-size: 1.2rem;
-    height: 7rem;
+  font-size: 1.2rem;
+  height: 7rem;
 }
 
 .btn-submit {
-    width: 45vw;
-    background-color: rgba(70, 156, 106, 1);
-    color: antiquewhite;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    height:3rem;
+  width: 45vw;
+  background-color: rgba(70, 156, 106, 1);
+  color: antiquewhite;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  height: 3rem;
 }
 
 .btn-submit:hover {
-    width: 45vw;
-    background-color: rgb(41, 147, 53);
-    color: antiquewhite;
-    font-size: 1.5rem;
-    font-weight: bolder;
-    height:3rem;
-    transition: 0.3s;
+  background-color: rgb(41, 147, 53);
+  transition: 0.3s;
+}
+
+/* ---------------------------------------------
+ESTRUCTURA ESENCIAL: .mapa-wrapper
+---------------------------------------------
+Este contenedor envuelve el <iframe> del mapa y el marcador personalizado (📍).
+Su propósito es:
+
+1. Permitir que el marcador y el tooltip se posicionen ABSOLUTAMENTE sobre el mapa.
+2. Evitar que el marcador o tooltip afecten el tamaño del iframe o lo desplacen.
+3. Aplicar márgenes laterales sin interferir con el layout del mapa.
+4. Asegurar que el mapa sea responsive y mantenga su proporción en móviles.
+*/
+.mapa {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.mapa-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mapa-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+  border-radius: 1em;
+  margin: 0;
 }
 
 /* Marcador encima del mapa */
 .marcador {
+<<<<<<< HEAD
     position: absolute;
     top: 20%;
     left: 83%;
@@ -122,9 +198,21 @@ form {
     transform: translate(-50%, -100%);
     z-index: 10;
     cursor: pointer;
+=======
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  font-size: 2rem;
+  animation: bounce 1s infinite;
+  z-index: 10;
+  cursor: pointer;
+>>>>>>> dev/mirel
 }
 
+/* Tooltip */
 .tooltip {
+<<<<<<< HEAD
     display: flex;
     background-color: #fff;
     color: #f80202;
@@ -134,82 +222,142 @@ form {
     margin-top: 0.5rem;
     font-size: 1.5rem;
     margin-left: -10rem;
+=======
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  color: #f80202;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  font-size: 1rem;
+  white-space: nowrap;
+  z-index: 20;
+>>>>>>> dev/mirel
 }
 
-/* Animación de bounce*/
+/* Animación de bounce */
 @keyframes bounce {
+<<<<<<< HEAD
     0%, 100% { 
         transform: translate(-0.5vh) scale(1); 
     }
     50% { 
         transform: translate(-0.5vh) scale(1.1); 
     }
+=======
+  0%, 100% {
+    transform: translate(-50%, -100%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -110%) scale(1.1);
+  }
+>>>>>>> dev/mirel
 }
 
+/* ---------------------------------------------
+@MEDIA QUERIES
+--------------------------------------------- */
+
+/* Tablets */
 @media screen and (max-width: 1024px) {
   .hero-layout {
+<<<<<<< HEAD
   flex-direction: column;
   justify-content: flex-start;
   margin-left: 0;
+=======
+    flex-direction: column;
+    justify-content: flex-start;
+>>>>>>> dev/mirel
   }
-  .info-contacto{
+
+  .info-contacto {
     flex-direction: row;
     margin-top: 2rem;
   }
+
   .hero-layout .paisaje {
     width: 100%;
     height: 60vh;
-    margin-top: 0;
-}
-.contacto form {
-  margin-right: 5vw;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
 
-}
-
+<<<<<<< HEAD
 @media screen and (max-width: 700px) {
  .info-contacto{
     flex-direction: column;
   }
 
 }
+=======
+  .contacto form {
+    margin-right: 5vw;
+  }
+>>>>>>> dev/mirel
 }
 
+/* Móviles */
 @media screen and (max-width: 768px) {
   h1 {
     font-size: medium;
   }
 
+<<<<<<< HEAD
   .info-contacto{
     flex-direction: column;
   }
 
+=======
+>>>>>>> dev/mirel
   .hero-layout {
     flex-direction: column;
     height: auto;
   }
 
   .hero-layout .paisaje {
-    width: 100vw;
+    width: 100%;
     height: 40vh;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
   }
 
   .info-contacto {
-    width: 100vw;
+    width: 100%;
     height: auto;
+    flex-direction: column;
+    padding: 0 1rem;
+    box-sizing: border-box;
   }
 
   .mapa {
-    width: 100vw;
+    width: 100%;
     height: 50vh;
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
-  .hero-layout iframe {
-    height: 40vh;
+  .mapa-wrapper {
+    padding: 0 1rem;
+  }
+
+  .mapa-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    display: block;
   }
 
   .contacto {
-    width: 100vw;
-    padding: 2em;
+    width: 100%;
+    padding: 2em 1rem;
+    flex-direction: column;
+    box-sizing: border-box;
   }
   
   .contacto .btn-submit {
@@ -217,11 +365,17 @@ form {
   }
 
   .contacto form {
+<<<<<<< HEAD
     width: 95%;
+=======
+    width: 100%;
+>>>>>>> dev/mirel
     height: auto;
     gap: 0.6vh;
+    flex-direction: column;
   }
 
+<<<<<<< HEAD
 
 
   .mapa iframe {
@@ -232,3 +386,22 @@ form {
 }
 
 }
+=======
+  .btn-submit {
+    width: 100%;
+  }
+
+  .marcador {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+
+  .tooltip {
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+>>>>>>> dev/mirel
