@@ -2,14 +2,9 @@
 ESTILOS GENERALES
 --------------------------------------------- */
 header {
-<<<<<<< HEAD
-    background-color: rgba(27, 68, 91, 1);
-    padding: 0.5rem;
-=======
   background-color: rgba(27, 68, 91, 1);
   padding: 0.5rem;
   margin-top: 2rem;
->>>>>>> dev/mirel
 }
 
 body {
