@@ -2,14 +2,9 @@
 ESTILOS GENERALES
 --------------------------------------------- */
 header {
-<<<<<<< HEAD
-    background-color: rgba(27, 68, 91, 1);
-    padding: 0.5rem;
-=======
   background-color: rgba(27, 68, 91, 1);
   padding: 0.5rem;
   margin-top: 2rem;
->>>>>>> dev/mirel
 }
 
 body {
@@ -35,48 +30,7 @@ h2 {
   margin: 0;
 }
 
-/* .formul {
-    font-size: 1.5rem;
-    margin-right: 0;
-    font-weight: bolder;
-    border: 0.2rem solid rgba(27, 68, 91, 1);
-} */
-
 .hero-layout {
-<<<<<<< HEAD
-    display: flex;
-    margin-top: 0;
-    margin-left: 2vw;
-    position: relative;
-}
-
-.hero-layout .paisaje {
-    width: 50vw;
-    /* height: 60vh; */
-    margin-top: 0;
-}
-
-.info-contacto {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.mapa {
-    position: relative;
-    width: 100;
-    height: 50vh;
-}
-
-.mapa iframe {
-    position: relative;
-    margin-left: 0.5vw;
-    width: 45vw;
-    height: 40vh;
-    flex-direction: column;
-    align-items: start;
-    
-=======
   display: flex;
   margin-top: 0;
   margin-left: 2vw;
@@ -86,7 +40,7 @@ h2 {
 
 .hero-layout .paisaje {
   width: 50vw;
-  height: 100%;
+  height: 76.5vh;
   margin-top: 0;
   padding-bottom: 2vh;
   object-fit: cover;
@@ -97,7 +51,6 @@ h2 {
   flex-direction: column;
   gap: 20px;
   margin-bottom: 2vh;
->>>>>>> dev/mirel
 }
 
 .contacto {
@@ -106,16 +59,6 @@ h2 {
 }
 
 form {
-<<<<<<< HEAD
-    position: relative;
-    margin-left: 0.2vw;
-    height: auto;
-    font-size: 1rem;
-    width: 45vw;  
-    display: flex;
-    flex-direction: column;
-    gap: 0.4vh;
-=======
   position: relative;
   margin-left: 0.2vw;
   height: auto;
@@ -124,7 +67,6 @@ form {
   display: flex;
   flex-direction: column;
   gap: 0.4vh;
->>>>>>> dev/mirel
 }
 
 .holder-size {
@@ -146,10 +88,6 @@ form {
   height: 3rem;
 }
 
-.btn-submit:hover {
-  background-color: rgb(41, 147, 53);
-  transition: 0.3s;
-}
 
 /* ---------------------------------------------
 ESTRUCTURA ESENCIAL: .mapa-wrapper
@@ -189,16 +127,6 @@ Su propósito es:
 
 /* Marcador encima del mapa */
 .marcador {
-<<<<<<< HEAD
-    position: absolute;
-    top: 20%;
-    left: 83%;
-    font-size: 2rem;
-    animation: bounce 1s infinite;
-    transform: translate(-50%, -100%);
-    z-index: 10;
-    cursor: pointer;
-=======
   position: absolute;
   top: 50%;
   left: 50%;
@@ -207,22 +135,10 @@ Su propósito es:
   animation: bounce 1s infinite;
   z-index: 10;
   cursor: pointer;
->>>>>>> dev/mirel
 }
 
 /* Tooltip */
 .tooltip {
-<<<<<<< HEAD
-    display: flex;
-    background-color: #fff;
-    color: #f80202;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    margin-top: 0.5rem;
-    font-size: 1.5rem;
-    margin-left: -10rem;
-=======
   position: absolute;
   bottom: 120%;
   left: 50%;
@@ -235,48 +151,31 @@ Su propósito es:
   font-size: 1rem;
   white-space: nowrap;
   z-index: 20;
->>>>>>> dev/mirel
 }
 
 /* Animación de bounce */
 @keyframes bounce {
-<<<<<<< HEAD
-    0%, 100% { 
-        transform: translate(-0.5vh) scale(1); 
-    }
-    50% { 
-        transform: translate(-0.5vh) scale(1.1); 
-    }
-=======
   0%, 100% {
     transform: translate(-50%, -100%) scale(1);
   }
   50% {
     transform: translate(-50%, -110%) scale(1.1);
   }
->>>>>>> dev/mirel
 }
 
 /* ---------------------------------------------
-@MEDIA QUERIES
+@ MEDIA QUERIES
 --------------------------------------------- */
 
 /* Tablets */
 @media screen and (max-width: 1024px) {
   .hero-layout {
-<<<<<<< HEAD
-  flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 0;
-=======
     flex-direction: column;
     justify-content: flex-start;
->>>>>>> dev/mirel
   }
 
   .info-contacto {
     flex-direction: row;
-    margin-top: 2rem;
   }
 
   .hero-layout .paisaje {
@@ -287,18 +186,9 @@ Su propósito es:
     box-sizing: border-box;
   }
 
-<<<<<<< HEAD
-@media screen and (max-width: 700px) {
- .info-contacto{
-    flex-direction: column;
-  }
-
-}
-=======
   .contacto form {
     margin-right: 5vw;
   }
->>>>>>> dev/mirel
 }
 
 /* Móviles */
@@ -307,21 +197,15 @@ Su propósito es:
     font-size: medium;
   }
 
-<<<<<<< HEAD
-  .info-contacto{
-    flex-direction: column;
-  }
-
-=======
->>>>>>> dev/mirel
   .hero-layout {
     flex-direction: column;
     height: auto;
+    object-fit: cover;
   }
 
   .hero-layout .paisaje {
     width: 100%;
-    height: 40vh;
+    height: 100vh;
     margin: 0 auto;
     padding: 0 1rem;
     box-sizing: border-box;
@@ -359,34 +243,14 @@ Su propósito es:
     flex-direction: column;
     box-sizing: border-box;
   }
-  
-  .contacto .btn-submit {
-    width: 100%;
-  }
 
   .contacto form {
-<<<<<<< HEAD
-    width: 95%;
-=======
     width: 100%;
->>>>>>> dev/mirel
     height: auto;
     gap: 0.6vh;
     flex-direction: column;
   }
 
-<<<<<<< HEAD
-
-
-  .mapa iframe {
-    width: 95vw;
-    height: 45vh;
-    border: none;
-    border-radius: 1em;
-}
-
-}
-=======
   .btn-submit {
     width: 100%;
   }
@@ -403,5 +267,3 @@ Su propósito es:
     transform: translateX(-50%);
   }
 }
-
->>>>>>> dev/mirel
