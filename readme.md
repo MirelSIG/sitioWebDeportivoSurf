@@ -39,10 +39,10 @@ El sitio incluye cinco páginas principales:
 │   ├── logos
 │   └── sobreNosotros
 ├── index.html
+├── home.html
 ├── pages
 │   ├── contacto.html
 │   ├── galeria.html
-│   ├── home.html
 │   ├── nosotros.html
 │   └── servicios.html
 └── readme.md
