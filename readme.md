@@ -58,7 +58,7 @@ No se ha hecho uso de licencias corporativas.
 Se incorporan imágenes de acceso libre tomadas de la web.
 
 ## 6. **Equipo de desarrollo:**
-- Jorge Cereceda  https://github.com/jorgecerecedatrabajo-bit
+- Jorge Cereceda  https://github.com/jorgecerecedatrabajo
 - Eder Vadillo  https://github.com/Edervad
 - Yoandres Lacruz  https://github.com/ylcruzdev
 - Mirel Volcán  https://github.com/MirelSIG
